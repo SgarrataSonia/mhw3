@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: white;
+    font-size: 15px;
+    height: 3000px;
+}
+
+nav {
+    display: flex;
+    background-color: darkcyan;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav p {
+    color: orchid;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5em;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+header {
+    background-image: url(SfondoHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+}
+
+#overlay {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay p {
+    background-color: rgba(140, 231, 219, 0.315);
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+#visualizza_birra {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+}
+
+.nascosto {
+    display: none;
+}
+
+.adatta {
+    padding: 20px;
+    height: 35%;
+    width: 8%;
+}
+
+#visualizza_ricette {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 15px;
+}
+
+section div {
+    display: flex;
+    background-color: white;
+    height: 20%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section div .Immagine { 
+    display: flex;
+    background-color:rgb(6, 244, 252);
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Immagine strong {
+    font-size: 20px;
+    padding: 20px;
+    height: 20%;
+    width: 95%;
+    text-align: center;
+}
+
+.Immagine img {
+    padding: 20px;
+    height: 80%;
+    width: 95%;
+}
+
+.Descrizione {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Ingredienti {
+    font-family: Arial, serif;
+    line-height: 1.3;
+    padding-left: 20px;
+}
+
+.NomeRicetta {
+    display: none;
+}
+
+.Descrizione a {
+    font-size: 22px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: palevioletred;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    body {
+        height: 700px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #overlay p {
+        font-size: 25px;
+    }
+
+    section {
+        height: 1300px;
+    }
+
+    .adatta {
+        padding: 15px;
+        height: 90px;
+        width: 65px;
+    }
+
+    section div {
+        height: 10%;
+        width: 80%;
+    }
+
+    .Immagine strong {
+        display: none;
+    }
+
+    .Ingredienti {
+        display: none;
+    }
+
+    .Descrizione a {
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .NomeRicetta {
+        display: block;
+        margin: 8px;
+        font-weight: bold;
+    }
+}
